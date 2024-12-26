@@ -10,10 +10,10 @@ class ModelResponse(BaseModel):
 
 class ModelWrapper:
     def __init__(self):
-        self.model = "llama3.2"
-        self.options = {"temperature": 0.7, "num_ctx": 10000}
+        self.model = "gemma2:2b"
+        self.options = {"temperature": 0.7, "num_ctx": 15000}
         self.format = ModelResponse.model_json_schema()
-        self.system_prompt = """I have books and researcb papers saved as untitled PDFs. I will provide a snippet of content
+        self.system_prompt = """I have books and research papers saved as untitled PDFs. I will provide a snippet of content
     from the PDF and it is your job to extract the title of the book and/or research paper alongside its authors. 
     The content is provided below: \n"""
 

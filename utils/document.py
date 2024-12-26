@@ -15,8 +15,8 @@ def load_document(path):
 
 def set_num_pages(document):
     num_pages = document.page_count
-    if num_pages > 5:
-        num_pages = 5
+    if num_pages > 3:
+        num_pages = 3
     return num_pages
 
 
